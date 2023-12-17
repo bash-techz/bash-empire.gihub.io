@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<style>
+    body {
+        background-image: url('halloween-background.webp');
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .login-div {
+        background-color: transparent;
+        backdrop-filter: blur(12px);
+        width: 25rem;
+        border: 0.1rem solid rgb(206, 197, 197);
+        border-radius: 1rem;
+       
+        height: 35rem;
+        margin-top: 15%;
+    }
+
+    .p1 {
+        color: white;
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: x-large;
+        text-align: center;
+    }
+
+    .text-box1 {
+        border: none;
+        border-bottom: solid rgb(206, 197, 197);
+        border-width: 0.13rem;
+        background-color: transparent;
+        width: 20rem;
+        margin-left: 10%;
+        margin-top: 2rem;
+        outline: none;
+        font-size: 1.2rem;
+        color: white;
+        font-weight: 1rem;
+    }
+
+    .password-box {
+        border: none;
+        border-bottom: solid rgb(206, 197, 197);
+        border-width: 0.13rem;
+        background-color: transparent;
+        width: 20rem;
+        margin-left: 10%;
+        margin-top: 4rem;
+        outline: none;
+        font-size: 1.2rem;
+        color: rgb(85, 83, 83);
+        font-weight: 1rem;
+    }
+
+    
+    ::placeholder {
+        color: white;
+        font-size: large;
+
+        
+    }
+
+    .capcha {
+        display: grid;
+        grid-template-columns: 1.5rem 7rem 1fr;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        font-size: 0.8rem;
+        margin-top: 2.6rem;
+        margin-left: 10%;
+        font-size: 0.8rem;
+        
+    }
+
+    .reset-prop {
+        color: black;
+    }
+
+    .reset-prop:hover {
+        color: rgb(85, 83, 83);
+    }
+
+    .checkbox {
+        margin: 0;
+    }
+
+    .button {
+        width: 15rem;
+        height: 2.5rem;
+        margin-top: 4rem;
+        margin-left: 100%;
+        border: solid rgb(85, 83, 83);
+        border-width: 0.15rem;
+        font-size: large;
+        font-family: 'Courier New', Courier, monospace;
+        border-radius: 1rem;
+        transition: opacity 0.5s;
+    }
+
+    .button:hover {
+        background-color: rgb(85, 83, 83);
+        color: white;
+        box-shadow: 0.3rem 0.3rem 0.3rem black;
+        cursor: pointer;
+        opacity: 0.7;
+    }
+
+    
+</style>
+<body>
+   <form>
+    <div class="login-div">
+        <p class="p1">Login Halloween</p>
+        <input type="text" class="text-box1" placeholder="username">
+        <input type="password" class="password-box" placeholder="password">
+        <div class="capcha">
+            <div><input type="checkbox" class="checkbox"></div>
+            <div>REMEMBER ME</div>
+            <div class=>FORGOT PASSWORD? <a href="#" class="reset-prop">RESET</a></div>
+            <button class="button">login</button>
+        </div>
+    </div>
+   </form> 
+</body>
+</html>
